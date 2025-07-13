@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FERROMATERIALES LA 94</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="container">
+      <div class="logo">
+  <img src="/images/logo.png" alt="Logo El Tornillo Feliz">
+  <span>FERROMATERIALES LA 94</span>
+</div>
+      <input type="text" placeholder="Buscar productos..." class="search-bar">
+      <div class="contacto">
+        <span>Atención al cliente: </span>
+        <strong>+57 318 401 9475</strong>
+      </div>
+        <button id="ver-carrito">🛒 <span id="contador">0</span></button>
+        <button class="hamburger" id="menu-toggle">&#9776;</button> <!-- NUEVO -->
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Compra material con 30% de descuento</h1>
+      <p>Promoción por tiempo limitado en toda la tienda.</p>
+      <a href="#productos" class="btn">Ver productos</a>
+    </div>
+  </section>
+ <!-- NOSOTROS -->
+  <section class="nosotros" id="nosotros"></section>
+<section class="nosotros-bg">
+  <div class="nosotros">
+    <h2>¿Quiénes Somos?</h2>
+    <p class="descripcion">
+      Somos una ferretería comprometida con ofrecer productos de calidad a los mejores precios.
+      Nuestra misión es ser aliados de tus proyectos, grandes o pequeños.
+    </p>
+    <div class="cards-nosotros">
+      <!-- Tarjeta 1 -->
+      <div class="card">
+        <h3>Experiencia</h3>
+        <p>Más de 10 años abasteciendo a nuestros clientes con materiales confiables y duraderos.</p>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="card active">
+        <h3>Atención Personalizada</h3>
+        <p>Brindamos asesoría profesional y cercana para cada necesidad de nuestros clientes.</p>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="card">
+        <h3>Calidad Garantizada</h3>
+        <p>Solo trabajamos con marcas reconocidas y materiales certificados para tu tranquilidad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- CATEGORIAS DESTACADAS -->
+  <section class="categorias" id="categorias">
+    <div class="container">
+      <div class="categoria">
+        <img src="/images/herramientas.jpg" alt="Herramientas">
+        <h3>Herramientas</h3>
+      </div>
+      <div class="categoria">
+        <img src="/images/pintura.png" alt="Pinturas">
+        <h3>Pinturas</h3>
+      </div>
+      <div class="categoria">
+        <img src="/images/Cemento-Argos-50KG.png" alt="Materiales">
+        <h3>Materiales</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="productos" id="productos">
+    <div class="container">
+      <h2>Productos Destacados</h2>
+      <div class="grid-productos" id="lista-productos">
+        <!-- Se llena con JS -->
+      </div>
+    </div>
+  </section>
+  
+<!-- SERVICIOS -->
+<section class="servicios" id="servicios">
+  <div class="container">
+    <h2>Servicios</h2>
+    <ul>
+      <li>🚛 Se remueven escombros y tierra</li>
+      <li>🏠 Domicilios a toda la ciudad</li>
+    </ul>
+  </div>
+</section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <form id="formulario-contacto">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CARRITO -->
+  <aside id="carrito">
+    <h2>Carrito</h2>
+    <div id="items-carrito"></div>
+    <p>Total: $<span id="total">0.00</span></p>
+    <button id="vaciar-carrito">Vaciar carrito</button>
+  </aside>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 FERROMATERIALES LA 94</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
